@@ -81,6 +81,18 @@ class HashMap {
 
 }
 
+const main = function(){
+    const LOTR = new HashMap
+    LOTR.MAX_LOAD_RATIO = .5
+    LOTR.SIZE_RATIO = 3
+
+    LOTR.set("Hobbit", "Bilbo")
+
+    return LOTR
+}
+
+console.log(main())
+
 const WhatDoesThisDo = function(){
     let str1 = 'Hello World.';
     let str2 = 'Hello World.';
@@ -97,4 +109,4 @@ const WhatDoesThisDo = function(){
     console.log(map2.get(str3));
 }
 
-WhatDoesThisDo()
+// WhatDoesThisDo()
